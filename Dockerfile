@@ -9,4 +9,4 @@ RUN npm run build
 ENV PORT 3000
 ENV TZ=America/Sao_Paulo
 EXPOSE 3000
-CMD ["node", ".next/standalone/server.js"]
+CMD ["npm", "start"]
