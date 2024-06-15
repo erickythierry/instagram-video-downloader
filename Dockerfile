@@ -3,9 +3,9 @@ WORKDIR /app
 RUN apk update
 COPY package*.json ./
 RUN npm i
-RUN npm run build
 RUN npm cache clean --force
 COPY . .
+RUN npm run build
 ENV PORT 3000
 ENV TZ=America/Sao_Paulo
 EXPOSE 3000
